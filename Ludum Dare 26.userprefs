@@ -1,0 +1,32 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Audio\Land.cs">
+    <Files>
+      <File FileName="Assets\LightAnimators\TileBehaviour.cs" Line="27" Column="20" />
+      <File FileName="Assets\LightAnimators\LightLightFadeBehaviour.cs" Line="3" Column="1" />
+      <File FileName="Assets\LightAnimators\MaterialFadeBehaviour.cs" Line="16" Column="131" />
+      <File FileName="Assets\MessageSystem\NextLevelOnMessage.cs" Line="9" Column="1" />
+      <File FileName="Assets\General Behaviours\StartPointBehaviour.cs" Line="11" Column="2" />
+      <File FileName="Assets\General Behaviours\SectionBehaviour.cs" Line="7" Column="38" />
+      <File FileName="Assets\General Behaviours\LightSourceBehaviour.cs" Line="10" Column="1" />
+      <File FileName="Assets\General Behaviours\GlobalScript.cs" Line="11" Column="12" />
+      <File FileName="Assets\MessageSystem\SendMessageOnTriggerEnter.cs" Line="14" Column="1" />
+      <File FileName="Assets\MessageSystem\MessageDelayer.cs" Line="18" Column="28" />
+      <File FileName="Assets\MessageSystem\FadeOnMessage.cs" Line="28" Column="21" />
+      <File FileName="Assets\MessageSystem\MessageHub.cs" Line="6" Column="9" />
+      <File FileName="Assets\MessageSystem\EnableControlsOnMessage.cs" Line="12" Column="50" />
+      <File FileName="Assets\General Behaviours\BackAndForthBehaviour.cs" Line="26" Column="1" />
+      <File FileName="Assets\General Behaviours\LightProbingBehaviour.cs" Line="23" Column="118" />
+      <File FileName="Assets\MessageSystem\SetGUITextureEnabledOnMessage.cs" Line="1" Column="1" />
+      <File FileName="Assets\General Behaviours\FallDamage.cs" Line="16" Column="2" />
+      <File FileName="Assets\General Behaviours\GlobalHelp.cs" Line="13" Column="3" />
+      <File FileName="Assets\Audio\AudioVolumeBasedOnVelocity.cs" Line="11" Column="2" />
+      <File FileName="Assets\Audio\Steps.cs" Line="4" Column="37" />
+      <File FileName="Assets\Audio\Land.cs" Line="19" Column="3" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

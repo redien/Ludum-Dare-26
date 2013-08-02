@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{F857C4C9-7831-AD9D-B614-7EE562D4D7A5}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_7;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>C:/Program Files (x86)/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Audio\AudioVolumeBasedOnVelocity.cs" />
+     <Compile Include="Assets\Audio\Land.cs" />
+     <Compile Include="Assets\Audio\RandomizeAudioClip.cs" />
+     <Compile Include="Assets\Audio\Steps.cs" />
+     <Compile Include="Assets\General Behaviours\BackAndForthBehaviour.cs" />
+     <Compile Include="Assets\General Behaviours\CircleBehaviour.cs" />
+     <Compile Include="Assets\General Behaviours\CollisionScaleBehaviour.cs" />
+     <Compile Include="Assets\General Behaviours\CollisionWhenNotVisibleBehaviour.cs" />
+     <Compile Include="Assets\General Behaviours\FallDamage.cs" />
+     <Compile Include="Assets\General Behaviours\GlobalHelp.cs" />
+     <Compile Include="Assets\General Behaviours\GlobalScript.cs" />
+     <Compile Include="Assets\General Behaviours\InventoryBehaviour.cs" />
+     <Compile Include="Assets\General Behaviours\InventoryItem.cs" />
+     <Compile Include="Assets\General Behaviours\LightProbingBehaviour.cs" />
+     <Compile Include="Assets\General Behaviours\LightSourceBehaviour.cs" />
+     <Compile Include="Assets\General Behaviours\SectionBehaviour.cs" />
+     <Compile Include="Assets\General Behaviours\StartPointBehaviour.cs" />
+     <Compile Include="Assets\LightAnimators\LightLightFadeBehaviour.cs" />
+     <Compile Include="Assets\LightAnimators\MaterialFadeBehaviour.cs" />
+     <Compile Include="Assets\LightAnimators\TileBehaviour.cs" />
+     <Compile Include="Assets\LightAnimators\WaterTileBehaviour.cs" />
+     <Compile Include="Assets\MessageSystem\DiscardMessage.cs" />
+     <Compile Include="Assets\MessageSystem\EnableControlsOnMessage.cs" />
+     <Compile Include="Assets\MessageSystem\FadeOnMessage.cs" />
+     <Compile Include="Assets\MessageSystem\MessageDelayer.cs" />
+     <Compile Include="Assets\MessageSystem\MessageHub.cs" />
+     <Compile Include="Assets\MessageSystem\MessageReceiver.cs" />
+     <Compile Include="Assets\MessageSystem\NextLevelOnMessage.cs" />
+     <Compile Include="Assets\MessageSystem\RespawnOnMessage.cs" />
+     <Compile Include="Assets\MessageSystem\SendMessageIfPlayerInTrigger.cs" />
+     <Compile Include="Assets\MessageSystem\SendMessageOnStart.cs" />
+     <Compile Include="Assets\MessageSystem\SendMessageOnTriggerEnter.cs" />
+     <Compile Include="Assets\MessageSystem\SetGUITextureEnabledOnMessage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{470794EB-1B61-B25E-4D24-BAEF5483FB34}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-UnityScript-firstpass.unityproj">
+      <Project>{4757AA2A-AD42-AF28-343E-9BC9685DA61A}</Project>      <Name>Assembly-UnityScript-firstpass</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
