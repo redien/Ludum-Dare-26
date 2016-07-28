@@ -12,12 +12,12 @@ public class CollisionWhenNotVisibleBehaviour : MonoBehaviour {
 	void Update () {
 		float lightFactor = LightSourceBehaviour.GetAccumulatedLightFactor(gameObject, LightSourceBehaviour.DefaultAttenuationFunction);
 		if (lightFactor > 0.4f) {
-			if (collider.enabled) {
-				collider.enabled = false;
+			if (GetComponent<Collider>().enabled) {
+				GetComponent<Collider>().enabled = false;
 			}
 		} else {
-			if (!collider.enabled) {
-				collider.enabled = true;
+			if (!GetComponent<Collider>().enabled) {
+				GetComponent<Collider>().enabled = true;
 			}
 		}
 	}

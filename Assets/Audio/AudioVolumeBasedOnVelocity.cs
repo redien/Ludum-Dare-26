@@ -17,9 +17,9 @@ public class AudioVolumeBasedOnVelocity : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		if (startTime != -1.0f && Time.time > startTime + 1.0f) {
-			audio.loop = true;
-			audio.volume = 0.0f;
-			audio.Play();
+			GetComponent<AudioSource>().loop = true;
+			GetComponent<AudioSource>().volume = 0.0f;
+			GetComponent<AudioSource>().Play();
 			startTime = -1.0f;
 		}
 
@@ -31,7 +31,7 @@ public class AudioVolumeBasedOnVelocity : MonoBehaviour {
 		}
 		
 		if (count > 3) {
-			audio.volume = accumulator / maxVelocity / 3;
+			GetComponent<AudioSource>().volume = accumulator / maxVelocity / 3;
 			count = 0;
 			accumulator = 0.0f;
 		}

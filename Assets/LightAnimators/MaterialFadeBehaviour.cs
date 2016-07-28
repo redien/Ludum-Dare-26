@@ -18,6 +18,6 @@ public class MaterialFadeBehaviour : MonoBehaviour {
 		color.r = StartMaterial.color.r + (EndMaterial.color.r - StartMaterial.color.r) * lightFactor;
 		color.g = StartMaterial.color.g + (EndMaterial.color.g - StartMaterial.color.g) * lightFactor;
 		color.b = StartMaterial.color.b + (EndMaterial.color.b - StartMaterial.color.b) * lightFactor;
-		renderer.material.color = color;
+		GetComponent<Renderer>().material.color = color;
 	}
 }

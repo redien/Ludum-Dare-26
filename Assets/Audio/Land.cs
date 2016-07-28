@@ -14,7 +14,7 @@ public class Land : MonoBehaviour {
 	// Update is called once per frame
 	void FixedUpdate () {
 		if (!wasGrounded && controller.isGrounded) {
-			audio.Play();
+			GetComponent<AudioSource>().Play();
 		}
 		
 		wasGrounded = controller.isGrounded;

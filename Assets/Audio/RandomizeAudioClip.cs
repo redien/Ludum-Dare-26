@@ -9,6 +9,6 @@ public class RandomizeAudioClip : MonoBehaviour {
 	// Use this for initialization
 	void Awake () {
 		int i = Random.Range(0, clips.Count);
-		audio.clip = clips[i];
+		GetComponent<AudioSource>().clip = clips[i];
 	}
 }

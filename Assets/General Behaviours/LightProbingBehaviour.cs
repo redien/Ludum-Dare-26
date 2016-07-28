@@ -12,14 +12,14 @@ public class LightProbingBehaviour : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		StartColor = transform.parent.renderer.material.color;
+		StartColor = transform.parent.GetComponent<Renderer>().material.color;
 		EndColor = StartColor - new Color(0.0f, 0.2f, 0.2f, 0.0f);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		x += Time.deltaTime;
-		light.intensity = StartIntensity + (Mathf.Sin(x * Speed) + 1) * (EndIntensity - StartIntensity) * 0.5f;
-		transform.parent.renderer.material.color = StartColor + (Mathf.Sin(x * Speed) + 1) * (EndColor - StartColor) * 0.5f;
+		GetComponent<Light>().intensity = StartIntensity + (Mathf.Sin(x * Speed) + 1) * (EndIntensity - StartIntensity) * 0.5f;
+		transform.parent.GetComponent<Renderer>().material.color = StartColor + (Mathf.Sin(x * Speed) + 1) * (EndColor - StartColor) * 0.5f;
 	}
 }

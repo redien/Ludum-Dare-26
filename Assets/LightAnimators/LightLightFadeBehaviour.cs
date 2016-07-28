@@ -7,12 +7,12 @@ public class LightLightFadeBehaviour : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		originalIntensity = light.intensity;
+		originalIntensity = GetComponent<Light>().intensity;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		float lightFactor = LightSourceBehaviour.GetAccumulatedLightFactor(gameObject, LightSourceBehaviour.DefaultAttenuationFunction);
-		light.intensity = originalIntensity * lightFactor;
+		GetComponent<Light>().intensity = originalIntensity * lightFactor;
 	}
 }

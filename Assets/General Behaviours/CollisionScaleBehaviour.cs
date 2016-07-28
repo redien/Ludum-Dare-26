@@ -8,7 +8,7 @@ public class CollisionScaleBehaviour : MonoBehaviour {
 	Vector3 originalScale;
 	// Use this for initialization
 	void Start () {
-		originalScale = (collider as BoxCollider).size;
+		originalScale = (GetComponent<Collider>() as BoxCollider).size;
 	}
 	
 	// Update is called once per frame
@@ -17,6 +17,6 @@ public class CollisionScaleBehaviour : MonoBehaviour {
 		
 		Vector3 scale = originalScale;
 		scale.y *= ScaleFactor * lightFactor;
-		(collider as BoxCollider).size = scale;
+		(GetComponent<Collider>() as BoxCollider).size = scale;
 	}
 }
